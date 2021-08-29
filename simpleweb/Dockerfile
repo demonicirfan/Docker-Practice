@@ -11,7 +11,7 @@ COPY ./package.json ./
 RUN npm install
 COPY ./ ./ 
 # here we copy all the files (remember to create .dockerignore file in the root dir to avoid copying your node_modules folder)
-#but npm is not installed on alpine OS
+#but npm is not installed on alpinexie OS
 
 #Default command
 CMD [ "npm", "start" ]
