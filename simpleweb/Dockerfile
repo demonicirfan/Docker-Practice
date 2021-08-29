@@ -1,5 +1,4 @@
 #Specify a base image
-#FROM alpine we will use other image
 FROM node:alpine 
 # alpine is a term in the docker world that is a small and light as possible
 # alpine version of node. It will have really basic things like ls, ping and other small commands with NPM command
@@ -11,7 +10,6 @@ COPY ./package.json ./
 RUN npm install
 COPY ./ ./ 
 # here we copy all the files (remember to create .dockerignore file in the root dir to avoid copying your node_modules folder)
-#but npm is not installed on alpinexie OS
 
 #Default command
 CMD [ "npm", "start" ]
