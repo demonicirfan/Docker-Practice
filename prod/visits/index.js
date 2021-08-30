@@ -3,7 +3,7 @@ const redis = require("redis");
 
 const app = express();
 const client = redis.createClient({
-  host: "redis-server",
+  host: "redis-server", //connecting to the redis server at host : redis server through contianer
   port: 6379,
 });
 client.set("visits", 0);

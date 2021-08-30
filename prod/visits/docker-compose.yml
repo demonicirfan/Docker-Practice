@@ -1,7 +1,8 @@
 version: '3'
 services:  
-  redis-services: 
+  redis-server: 
     image: 'redis'
+    #redis server used inside express app
   node-app: 
     build: .
     ports: 
