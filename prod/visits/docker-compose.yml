@@ -4,6 +4,7 @@ services:
     image: 'redis'
     #redis server used inside express app
   node-app: 
+    restart: "no"
     build: .
     ports: 
       - "4001:8081"
